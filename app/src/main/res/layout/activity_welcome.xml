@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    android:id="@+id/main"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/welcome1">
+<ScrollView
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+    </LinearLayout>
+</ScrollView>
+
+    <LinearLayout
+        android:id="@+id/llGetstarted"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_gravity="left"
+        android:gravity="left"
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="100dp"
+        android:layout_marginBottom="30dp"
+        android:padding="10dp"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/welcome2"
+        android:orientation="vertical">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="left"
+            android:gravity="left"
+            android:visibility="gone"
+            android:layout_marginLeft="20dp"
+            android:drawablePadding="10dp"
+            android:drawableRight="@drawable/ic_next_white"
+            android:text="GET STARTED"
+            android:textColor="@color/white"
+            android:textSize="20dp"
+            android:textStyle=""/>
+
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/ll_androidid"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:layout_gravity="left"
+        android:gravity="left"
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="5dp"
+        android:layout_marginBottom="30dp"
+        android:padding="10dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"
+        android:orientation="vertical">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:textStyle="bold"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:textSize="15sp"
+            android:textColor="@color/white"
+
+            android:text="@string/androidId"/>
+
+    </LinearLayout>
+</RelativeLayout>

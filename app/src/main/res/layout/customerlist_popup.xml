@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="1dp"
+    android:id="@+id/rl_main"
+    android:background="@color/white"
+        android:orientation="vertical">
+
+    <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#ffffff"
+            android:orientation="vertical"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true">
+
+        <TextView
+                android:id="@+id/tv_popuptitle1"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:gravity="center"
+                android:background="@color/colorPrimary"
+                android:text="Select "
+                android:textColor="#ffffff"
+                android:textSize="22sp" />
+
+        <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:id="@+id/activity_search"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/white"
+                android:orientation="vertical">
+            <LinearLayout
+                    android:id="@+id/llsearch"
+                    android:layout_width="match_parent"
+                    android:layout_height="45dp"
+                    android:background="@color/greylight"
+                    android:orientation="horizontal">
+                <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginRight="5dp"
+                        android:background="@drawable/searchbg"
+                        android:layout_weight="0.2">
+                    <EditText
+                            android:id="@+id/etsearch1"
+                            android:layout_width="match_parent"
+                            android:layout_height="35dp"
+                            android:hint="Search for customer.."
+                            android:lines="1"
+                            android:scrollHorizontally="true"
+                            android:ellipsize="end"
+                            android:inputType="text"
+                            android:textColorHint="@color/greydark"
+                            android:textColor="@color/black"
+                            android:paddingLeft="10dp"
+                            android:background="@drawable/searchbg"
+                            android:drawableLeft="@drawable/ic_search"
+                            android:layout_weight="1"
+                            android:drawablePadding="10dp"
+                            android:paddingRight="10dp"/>
+                </LinearLayout>
+            </LinearLayout>
+            <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="45dp"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:background="@color/white"
+                    android:orientation="horizontal">
+                <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                        android:background="@drawable/searchbg"
+                        android:layout_weight="0.2">
+                    <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="35dp"
+                            android:text="SL NO."
+                            android:lines="1"
+                        android:layout_gravity="center"
+                        android:gravity="center"
+                            android:textStyle="bold"
+                            android:textColor="@color/black"
+                            android:layout_weight="1.5"/>
+                    <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="35dp"
+                            android:text="NAME"
+                            android:lines="1"
+                            android:textStyle="bold"
+                        android:layout_gravity="center"
+                        android:gravity="center"
+                            android:textColor="@color/black"
+                            android:layout_weight="1"/>
+                    <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="35dp"
+                            android:text="ACCOUNT NO."
+                            android:lines="1"
+                        android:layout_gravity="center"
+                        android:gravity="center"
+                            android:textStyle="bold"
+                            android:textColor="@color/black"
+                            android:layout_weight="1"/>
+                </LinearLayout>
+            </LinearLayout>
+            <ListView
+                    android:id="@+id/list_view1"
+                    android:divider="#ffffff"
+                    android:background="#ffffff"
+                    android:layout_below="@+id/lv_storeList"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content" />
+        </LinearLayout>
+
+    </LinearLayout>
+</RelativeLayout>
+

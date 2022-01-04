@@ -1,0 +1,37 @@
+<resources>
+    <string name="app_name">NBFC</string>
+    <string name="title_dashboard">Dashboard</string>
+    <string name="title_notifications">Notifications</string>
+    <string name="androidId">Click here for <u>Android ID</u>.</string>
+
+    //Bottom Bar
+    <string name="title_home">Home</string>
+    <string name="title_about">About Us</string>
+    <string name="title_credentials">Reset Pin</string>
+    <string name="title_logout">Logout</string>
+    <string name="title_quit">Quit</string>
+    <string name="Aboutus">        This mobile application which helps you to recover the loan Payment dues from the loan account holders. It has a simple loan collection strategy which allows you to attain a smooth collection of loans. Some high-end features like Collection, To Do List, Client &amp; User reports in this app allow you to attain a hassle-free Loan recovery.</string>
+
+    <string-array name="array_accounts">
+        <item>Savings Bank</item>
+        <item>Daily Deposit</item>
+        <item>Recurring Deposit</item>
+        <item>Group Deposit Credit Scheme</item>
+    </string-array>
+
+    <!--<string name="BankKey">D .3296</string>
+    <string name="BankHeader">Malabar Social Welfare Co-operative Society Ltd</string>
+    <string name="BankVerified">0</string>-->
+
+    <string name="BankKey"></string>
+    <string name="BankHeader"></string>
+    <string name="BankVerified"></string>
+
+<!--    <string name="BankKey">-5000</string>-->
+<!--    <string name="BankHeader">PERFECT SCORE BANK HEAD OFFICE</string>-->
+<!--    <string name="BankVerified">0</string>-->
+
+    <string name="bank_name">NBFC</string>
+    <!--<string name="bank_name">Malabar Social Welfare Co-operative Society Ltd No.D.3296</string>-->
+
+</resources>

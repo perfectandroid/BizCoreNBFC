@@ -1,0 +1,511 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/rl_main"
+    android:background="@drawable/loginbg">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="16dp"
+        android:paddingRight="16dp"
+        android:paddingTop="12dp"
+        android:paddingBottom="12dp"
+        tools:ignore="MissingConstraints"
+        android:visibility="gone">
+
+        <com.google.android.material.tabs.TabLayout
+            android:id="@+id/tabLayout"
+            android:layout_width="wrap_content"
+            android:layout_height="36dp"
+            android:layout_centerHorizontal="true"
+            android:background="@drawable/tab_layout_background"
+            app:tabMode="scrollable"
+            app:tabBackground="@drawable/tab_layout_selector"
+            app:tabSelectedTextColor="@color/colorPrimary"
+            app:tabPaddingStart="16dp"
+            app:tabPaddingEnd="16dp"
+            app:tabIndicatorHeight="0dp"
+            app:tabRippleColor="@null"
+            app:tabTextAppearance="@style/TabTextAppearance"/>
+
+
+        <androidx.viewpager.widget.ViewPager
+            android:id="@+id/viewpager_main"
+            android:layout_below="@+id/tabLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_marginTop="20dp"
+            android:layout_height="40dp"
+            android:paddingLeft="40dp"
+            android:paddingRight="40dp">
+            <TextView
+                android:id="@+id/tvMpin"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="MPIN"
+                android:textStyle="bold"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:textColor="@color/white"
+                android:background="@drawable/toggle1"/>
+            <TextView
+                android:id="@+id/tvPasswordChange"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:textStyle="bold"
+                android:layout_weight="1"
+                android:textColor="#5a1a4c"
+                android:text="PASSWORD"
+                android:background="@drawable/toggle3"/>
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/linear_mpin_view"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:visibility="visible">
+            <ScrollView
+                xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:tools="http://schemas.android.com/tools"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                tools:context=".bottombar.resetcredentials.ResetCredentialFragment.MpinChangeFragment">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <LinearLayout
+                        android:id="@+id/linear1"
+                        android:layout_marginTop="20dp"
+                        android:layout_alignParentTop="true"
+                        android:orientation="vertical"
+                        android:gravity="center_horizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <ImageView
+
+                            android:src="@drawable/ic_change_pin"
+                            android:visibility="gone"
+                            android:layout_width="70dp"
+                            android:layout_height="30dp" />
+
+                        <TextView
+                            android:id="@+id/txt_heading"
+                            android:text="Change M-Pin"
+                            android:textColor="@color/white"
+                            android:textSize="25sp"
+                            android:textStyle="normal"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content" />
+
+                    </LinearLayout>
+
+
+                    <LinearLayout
+                        android:id="@+id/lnrCont"
+                        android:layout_below="@+id/linear1"
+                        android:padding="10dp"
+                        android:layout_margin="5dp"
+                        android:orientation="vertical"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+
+                        <LinearLayout
+                            android:id="@+id/linear2"
+                            android:layout_below="@+id/linear1"
+                            android:orientation="vertical"
+                            android:paddingLeft="10dp"
+                            android:paddingRight="10dp"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+
+                            <LinearLayout
+                                android:orientation="vertical"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content">
+
+                                <com.google.android.material.textfield.TextInputLayout
+                                    android:layout_marginBottom="10dp"
+                                    style="@style/TextInputLayoutStyle"
+                                    android:textColorHint="@color/white"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content">
+
+                                    <com.google.android.material.textfield.TextInputEditText
+                                        android:id="@+id/input_user_name"
+                                        android:hint="User Name"
+                                        android:textColor="@color/white"
+                                        android:inputType="textPersonName"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"/>
+
+                                </com.google.android.material.textfield.TextInputLayout>
+
+
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:orientation="vertical"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content">
+
+
+                                <com.google.android.material.textfield.TextInputLayout
+                                    android:layout_marginBottom="10dp"
+                                    app:passwordToggleEnabled="true"
+                                    app:passwordToggleTint="@color/white"
+                                    style="@style/TextInputLayoutStyle"
+                                    android:textColorHint="@color/white"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content">
+
+                                    <com.google.android.material.textfield.TextInputEditText
+                                        android:id="@+id/input_user_password"
+                                        android:hint="Password"
+                                        android:textColor="@color/white"
+                                        android:inputType="textPassword"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"/>
+
+                                </com.google.android.material.textfield.TextInputLayout>
+
+
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="vertical">
+
+
+                                <com.google.android.material.textfield.TextInputLayout
+                                    android:id="@+id/name_text_input"
+                                    android:layout_marginBottom="10dp"
+                                    app:passwordToggleEnabled="true"
+                                    app:passwordToggleTint="@color/white"
+                                    style="@style/TextInputLayoutStyle"                                    android:textColorHint="@color/white"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content">
+
+
+                                    <com.google.android.material.textfield.TextInputEditText
+                                        android:id="@+id/input_user_mpin"
+                                        android:hint="M-pin"
+                                        android:maxLength="6"
+                                        android:textColor="@color/white"
+                                        android:inputType="textPassword"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"/>
+
+
+                                </com.google.android.material.textfield.TextInputLayout>
+
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:id="@+id/lnr_new_m_pin"
+                                android:orientation="vertical"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content">
+
+
+                                <com.google.android.material.textfield.TextInputLayout
+                                    android:layout_marginBottom="10dp"
+                                    app:passwordToggleEnabled="true"
+                                    app:passwordToggleTint="@color/white"
+                                    style="@style/TextInputLayoutStyle"                                    android:textColorHint="@color/white"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content">
+
+
+                                    <com.google.android.material.textfield.TextInputEditText
+                                        android:id="@+id/input_user_new_pin"
+                                        android:hint="New M-pin"
+                                        android:textColor="@color/white"
+                                        android:inputType="textPassword"
+                                        android:maxLength="6"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"/>
+
+                                </com.google.android.material.textfield.TextInputLayout>
+
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:orientation="vertical"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content">
+
+                                <com.google.android.material.textfield.TextInputLayout
+                                    android:layout_marginBottom="10dp"
+                                    app:passwordToggleEnabled="true"
+                                    app:passwordToggleTint="@color/white"
+                                    style="@style/TextInputLayoutStyle"                                    android:textColorHint="@color/white"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content">
+
+
+                                    <com.google.android.material.textfield.TextInputEditText
+                                        android:id="@+id/input_user_new_pin_confirm"
+                                        android:hint="Confirm M-pin"
+                                        android:textColor="@color/white"
+                                        android:inputType="textPassword"
+                                        android:maxLength="6"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"/>
+
+
+                                </com.google.android.material.textfield.TextInputLayout>
+
+                            </LinearLayout>
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+
+                    <Button
+                        android:id="@+id/btnMPinSubmit"
+                        android:text="SUBMIT"
+                        android:textAllCaps="false"
+                        android:layout_centerHorizontal="true"
+                        android:layout_below="@+id/lnrCont"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textStyle="bold"
+                        android:layout_marginLeft="30dp"
+                        android:layout_marginRight="30dp"
+                        android:layout_marginBottom="10dp"
+                        android:layout_marginTop="40dp"
+                        android:textColor="@color/colorPrimaryDark"
+                        android:background="@drawable/btncancelbg"
+                        android:layout_above="@+id/btncancel"
+                        android:padding="10dp"/>
+
+                </RelativeLayout>
+            </ScrollView>
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/linear_change_pin_view"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:visibility="gone">
+            <ScrollView
+                xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:tools="http://schemas.android.com/tools"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                tools:context=".bottombar.resetcredentials.ResetCredentialFragment.PasswordChangeFragment">
+
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+
+                    <LinearLayout
+                        android:id="@+id/linear_change_pin"
+                        android:layout_marginTop="20dp"
+                        android:layout_alignParentTop="true"
+                        android:orientation="vertical"
+                        android:gravity="center_horizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <ImageView
+
+                            android:src="@drawable/ic_change_pin"
+                            android:layout_width="70dp"
+                            android:visibility="gone"
+                            android:layout_height="60dp" />
+
+                        <TextView
+                            android:text="Change Password"
+                            android:textColor="@color/white"
+                            android:textSize="25sp"
+                            android:textStyle="normal"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content" />
+
+                    </LinearLayout>
+
+
+                    <LinearLayout
+                        android:id="@+id/linear_pin_data"
+                        android:layout_below="@+id/linear_change_pin"
+                        android:padding="10dp"
+                        android:layout_margin="5dp"
+                        android:orientation="vertical"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+
+                        <LinearLayout
+                            android:id="@+id/linearpin_data"
+                            android:layout_below="@+id/linear_change_pin"
+                            android:orientation="vertical"
+                            android:paddingLeft="10dp"
+                            android:paddingRight="10dp"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+
+                            <LinearLayout
+                                android:orientation="vertical"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content">
+
+
+                                <com.google.android.material.textfield.TextInputLayout
+                                    android:layout_marginBottom="10dp"
+                                    style="@style/TextInputLayoutStyle"
+                                    android:textColorHint="@color/white"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content">
+
+
+                                    <com.google.android.material.textfield.TextInputEditText
+                                        android:id="@+id/tvReceiverName"
+                                        android:hint="User Name"
+                                        android:textColor="@color/white"
+                                        android:inputType="textPersonName"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"/>
+
+
+
+                                </com.google.android.material.textfield.TextInputLayout>
+
+
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:orientation="vertical"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content">
+
+
+                                <com.google.android.material.textfield.TextInputLayout
+                                    android:layout_marginBottom="10dp"
+                                    app:passwordToggleEnabled="true"
+                                    app:passwordToggleTint="@color/white"
+                                    style="@style/TextInputLayoutStyle"                                    android:textColorHint="@color/white"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content">
+
+                                    <com.google.android.material.textfield.TextInputEditText
+                                        android:id="@+id/tvPassword"
+                                        android:hint="Password"
+                                        android:textColor="@color/white"
+                                        android:inputType="textPassword"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"/>
+
+                                </com.google.android.material.textfield.TextInputLayout>
+
+
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="vertical">
+
+
+                                <com.google.android.material.textfield.TextInputLayout
+                                    android:layout_marginBottom="10dp"
+                                    android:textColorHint="@color/white"
+                                    app:passwordToggleEnabled="true"
+                                    app:passwordToggleTint="@color/white"
+                                    style="@style/TextInputLayoutStyle"                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content">
+
+                                    <com.google.android.material.textfield.TextInputEditText
+                                        android:id="@+id/tvNewPassword"
+                                        android:hint="New Password"
+                                        android:textColor="@color/white"
+                                        android:inputType="textPassword"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"/>
+
+                                </com.google.android.material.textfield.TextInputLayout>
+
+                            </LinearLayout>
+
+
+                            <LinearLayout
+                                android:orientation="vertical"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content">
+
+
+                                <com.google.android.material.textfield.TextInputLayout
+                                    android:layout_marginBottom="10dp"
+                                    app:passwordToggleEnabled="true"
+                                    app:passwordToggleTint="@color/white"
+                                    style="@style/TextInputLayoutStyle"                                    android:textColorHint="@color/white"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content">
+
+                                    <com.google.android.material.textfield.TextInputEditText
+                                        android:id="@+id/tvConfirmPassword"
+                                        android:hint="Confirm Password"
+                                        android:textColor="@color/white"
+                                        android:inputType="textPassword"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"/>
+
+                                </com.google.android.material.textfield.TextInputLayout>
+
+                            </LinearLayout>
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+
+                    <Button
+                        android:id="@+id/btnCPSubmit"
+                        android:layout_below="@+id/linear_pin_data"
+                        android:text="SUBMIT"
+                        android:textAllCaps="false"
+                        android:layout_centerHorizontal="true"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textStyle="bold"
+                        android:layout_marginLeft="30dp"
+                        android:layout_marginRight="30dp"
+                        android:layout_marginBottom="10dp"
+                        android:layout_marginTop="40dp"
+                        android:textColor="@color/colorPrimaryDark"
+                        android:background="@drawable/btncancelbg"
+                        android:layout_above="@+id/btncancel"
+                        android:padding="10dp"/>
+
+                </RelativeLayout>
+
+
+            </ScrollView>
+        </LinearLayout>
+
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

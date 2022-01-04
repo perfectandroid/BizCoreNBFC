@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimaryDark">#ED2D54</color>
+    <color name="colorPrimary">#F55A5C</color>
+    <color name="colorAccent">#FD8463</color>
+    <color name="colorAccentDark">#530340</color>
+    <color name="colorAccentlight">#FFDAD3</color>
+    <color name="white">#ffffff</color>
+    <color name="black">#000000</color>
+    <color name="grey">#F3F3F3</color>
+    <color name="greylight">#DAD7D0</color>
+    <color name="slate">#919191</color>
+    <color name="greydark">#5E5E5E</color>
+
+
+
+
+    <color name="mtrl_textinput_default_box_stroke_color">#fff</color>
+
+    <color name="color_activity_transparent">#00000000</color>
+
+    <!-- Screens background color-->
+    <color name="bg_screen1">#f64c73</color>
+    <color name="bg_screen2">#20d2bb</color>
+    <color name="bg_screen3">#3395ff</color>
+    <color name="bg_screen4">#c873f4</color>
+
+    <!-- dots inactive colors -->
+    <color name="dot_dark_screen1">#d1395c</color>
+    <color name="dot_dark_screen2">#14a895</color>
+    <color name="dot_dark_screen3">#2278d4</color>
+    <color name="dot_dark_screen4">#a854d4</color>
+
+    <!-- dots active colors -->
+    <color name="dot_light_screen1">#f98da5</color>
+    <color name="dot_light_screen2">#8cf9eb</color>
+    <color name="dot_light_screen3">#93c6fd</color>
+    <color name="dot_light_screen4">#e4b5fc</color>
+
+    <array name="array_dot_active">
+        <item>@color/dot_light_screen1</item>
+        <item>@color/dot_light_screen2</item>
+        <item>@color/dot_light_screen3</item>
+        <item>@color/dot_light_screen4</item>
+    </array>
+
+    <array name="array_dot_inactive">
+        <item>@color/dot_dark_screen1</item>
+        <item>@color/dot_dark_screen2</item>
+        <item>@color/dot_dark_screen3</item>
+        <item>@color/dot_dark_screen4</item>
+    </array>
+
+
+    <color name="red">#FC0303</color>
+    <color name="green">#4CAF50</color>
+
+
+    <color name="graph1">#4FC3F7</color>
+    <color name="graph2">#F06292</color>
+    <color name="graph3">#FFD54F</color>
+    <color name="graph4">#81C784</color>
+    <color name="graph5">#9575CD</color>
+    <color name="graph6">#E57373</color>
+    <color name="graph7">#A1887F</color>
+    <color name="graph8">#64B5F6</color>
+    <color name="graph9">#BA68C8</color>
+    <color name="graph10">#7986CB</color>
+</resources>

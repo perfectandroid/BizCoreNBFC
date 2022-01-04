@@ -1,0 +1,228 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/rl_main"
+    android:background="@color/white"
+    android:orientation="vertical">
+<!--    <ScrollView-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="match_parent">-->
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:orientation="vertical">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:layout_weight="0.9"
+                android:orientation="vertical">
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/mpin_top_bg"
+                    />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:layout_weight="1"
+                android:background="@drawable/login_mpin_bg"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="40dp"
+                        android:layout_marginRight="40dp"
+                        android:gravity="center"
+                        android:orientation="horizontal"
+                        android:visibility="gone">
+                    <EditText
+                        android:id="@+id/et_otp1"
+                        android:layout_width="match_parent"
+                        android:layout_weight="1"
+                        android:layout_height="50dp"
+                        android:layout_marginRight="5dp"
+                        android:layout_marginTop="20dp"
+                        android:layout_marginBottom="20dp"
+                        android:gravity="center"
+                        android:inputType="number"
+                        android:maxLength="1"
+                        android:nextFocusForward="@+id/et_otp2"
+                        android:imeOptions="actionDone"
+                        android:singleLine="true"
+                        android:textStyle="bold"
+                        android:background="@drawable/edtbg"
+                        android:textColor="#fff"
+                        android:textColorHint="#fff">
+                        <requestFocus />
+                    </EditText>
+
+                    <EditText
+                        android:id="@+id/et_otp2"
+                        android:layout_width="match_parent"
+                        android:layout_weight="1"
+                        android:layout_height="50dp"
+                        android:layout_marginRight="5dp"
+                        android:layout_marginTop="20dp"
+                        android:layout_marginBottom="20dp"
+                        android:nextFocusForward="@+id/et_otp3"
+                        android:gravity="center"
+                        android:inputType="number"
+                        android:imeOptions="actionDone"
+                        android:singleLine="true"
+                        android:background="@drawable/edtbg"
+                        android:maxLength="1"
+                        android:textStyle="bold"
+                        android:textColor="#fff"
+                        android:textColorHint="#fff">
+                        <requestFocus />
+                    </EditText>
+
+                    <EditText
+                        android:id="@+id/et_otp3"
+                        android:layout_width="match_parent"
+                        android:layout_weight="1"
+                        android:layout_height="50dp"
+                        android:layout_marginRight="5dp"
+                        android:layout_marginTop="20dp"
+                        android:layout_marginBottom="20dp"
+                        android:nextFocusForward="@+id/et_otp4"
+                        android:gravity="center"
+                        android:inputType="number"
+                        android:imeOptions="actionDone"
+                        android:singleLine="true"
+                        android:background="@drawable/edtbg"
+                        android:maxLength="1"
+                        android:textStyle="bold"
+                        android:textColor="#fff"
+                        android:textColorHint="#fff">
+                        <requestFocus />
+                    </EditText>
+
+                    <EditText
+                        android:id="@+id/et_otp4"
+                        android:layout_width="match_parent"
+                        android:layout_weight="1"
+                        android:layout_height="50dp"
+                        android:layout_marginRight="5dp"
+                        android:layout_marginTop="20dp"
+                        android:layout_marginBottom="20dp"
+                        android:nextFocusForward="@+id/et_otp5"
+                        android:gravity="center"
+                        android:inputType="number"
+                        android:imeOptions="actionDone"
+                        android:singleLine="true"
+                        android:background="@drawable/edtbg"
+                        android:maxLength="1"
+                        android:textColor="#fff"
+                        android:textStyle="bold"
+                        android:textColorHint="#fff">
+                        <requestFocus />
+                    </EditText>
+
+                    <EditText
+                        android:id="@+id/et_otp5"
+                        android:layout_width="match_parent"
+                        android:layout_weight="1"
+                        android:layout_height="50dp"
+                        android:layout_marginRight="5dp"
+                        android:layout_marginTop="20dp"
+                        android:layout_marginBottom="20dp"
+                        android:nextFocusForward="@+id/et_otp6"
+                        android:gravity="center"
+                        android:inputType="number"
+                        android:imeOptions="actionDone"
+                        android:singleLine="true"
+                        android:textStyle="bold"
+                        android:background="@drawable/edtbg"
+                        android:maxLength="1"
+                        android:textColor="#fff"
+                        android:textColorHint="#fff">
+                        <requestFocus />
+                    </EditText>
+
+                    <EditText
+                        android:id="@+id/et_otp6"
+                        android:layout_width="match_parent"
+                        android:layout_weight="1"
+                        android:layout_height="50dp"
+                        android:layout_marginTop="20dp"
+                        android:layout_marginBottom="20dp"
+                        android:gravity="center"
+                        android:inputType="number"
+                        android:imeOptions="actionDone"
+                        android:singleLine="true"
+                        android:background="@drawable/edtbg"
+                        android:maxLength="1"
+                        android:textStyle="bold"
+                        android:textColor="#fff"
+                        android:textColorHint="#fff">
+                        <requestFocus />
+                    </EditText>
+                    </LinearLayout>
+
+                    <com.goodiebag.pinview.Pinview
+                        android:id="@+id/pinview"
+                        app:pinBackground="@drawable/edtbg"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        app:pinWidth="30dp"
+                        app:pinHeight="40dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"
+                        android:paddingLeft="5dp"
+                        android:paddingRight="5dp"
+                        app:pinLength="6"
+                        app:textSize="8sp"
+                        app:cursorVisible="false"
+                        app:forceKeyboard="false"
+                        app:hint=""
+                        app:inputType="number"
+                        app:password="true"/>
+
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/tv_forget"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
+                    android:gravity="center"
+                    android:text="Forget MPIN ?"
+                    android:textStyle="bold"
+                    android:textColor="#fff"
+                    android:textSize="15dp" />
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginLeft="155dp"
+                    android:layout_marginRight="155dp"
+                    android:layout_marginBottom="20dp"
+                    android:gravity="center"
+                    android:background="@color/white"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+<!--    </ScrollView>-->
+</LinearLayout>
