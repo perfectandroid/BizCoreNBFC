@@ -52,7 +52,7 @@ class CustomerListAdapter(internal var mContext: Context, private val arraylist:
             holder = view.tag as ViewHolder
         }
         val pos = position+1
-        holder.tvAreaName!!.text = arraylist[position].Name+"\n"+arraylist[position].Address
+        holder.tvAreaName!!.text = arraylist[position].Name+","+"\n"+arraylist[position].Address
         holder.tvSlno!!.text =""+pos
         holder.tvPhone!!.text = arraylist[position].MobileNumber
         holder.tvAccountno!!.text = arraylist[position].AccountNumber

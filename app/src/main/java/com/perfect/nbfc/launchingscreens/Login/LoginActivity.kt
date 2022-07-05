@@ -265,6 +265,7 @@ class LoginActivity : AppCompatActivity() {
                             try {
                                 progressDialog!!.dismiss()
                                 val jObject = JSONObject(response.body())
+                                Log.i("LoginResponse",response.body())
                                 if (jObject.getString("StatusCode") == "0") {
                                     val jobjt = jObject.getJSONObject("LogInfo")
                                     val UserName = applicationContext.getSharedPreferences(

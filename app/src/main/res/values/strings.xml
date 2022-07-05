@@ -27,6 +27,10 @@
     <string name="BankHeader"></string>
     <string name="BankVerified"></string>
 
+   <!-- <string name="BankKey">P22</string>
+    <string name="BankHeader">PERFECT NBFC BANK HEAD OFFICE</string>
+    <string name="BankVerified"></string>-->
+
 <!--    <string name="BankKey">-5000</string>-->
 <!--    <string name="BankHeader">PERFECT SCORE BANK HEAD OFFICE</string>-->
 <!--    <string name="BankVerified">0</string>-->

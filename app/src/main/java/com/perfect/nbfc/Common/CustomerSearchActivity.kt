@@ -1000,6 +1000,7 @@ class CustomerSearchActivity : AppCompatActivity() ,View.OnClickListener{
                             try {
                                 progressDialog!!.dismiss()
                                 val jObject = JSONObject(response.body())
+                                Log.i("Response",response.body())
                                 if (jObject.getString("StatusCode") == "0") {
 
 
